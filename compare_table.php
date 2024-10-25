@@ -68,7 +68,7 @@
 <body>
 <center>
    <div> <h3 ><strong>Accounting Software Comparison Chart</h3></strong></div></center><br>
-<div class="row" id="pricing">
+<div class="row">
     <!-- <center> -->
 
     <div class="table-responsive"> <!-- Table responsive wrapper -->

@@ -53,6 +53,8 @@ include('headerr.php')?>
 <?php include('pricing.php') ?>  
 
 <?php include('faq.php') ?>  
+<?php include('buynow.php') ?>  
+
 
 
 

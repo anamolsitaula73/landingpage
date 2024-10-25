@@ -15,7 +15,7 @@
 }
 
 </style>
-<div class="container">
+<div class="container"  id="pricing">
     <div class="row">
         <div class="col-xs-12">
             <h1 class="page-header blue3" style="font-size:40px !important;">

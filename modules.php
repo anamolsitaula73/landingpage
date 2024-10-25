@@ -27,7 +27,8 @@
 
 /* Each slide */
 .client-slide {
-    min-width: 300px !important;
+    min-width: 200px !important;
+
     display: flex;
     border: 2px solid #d90429;
     border-radius: 5px;

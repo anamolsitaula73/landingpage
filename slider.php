@@ -84,11 +84,41 @@
             .slide {
                 flex: 0 0 100%; /* Show 1 slide at a time on mobile phones */
                 align-items:center;  
-                padding-left:20%; 
+                margin:auto;
+ 
 
             }
                         .client-slide {
                         width:70%;
+    height: 300px;/* Ensure full height */
+
+
+                         }
+        }
+        
+        @media (max-width: 474px) {
+            .slide {
+                flex: 0 0 100%; /* Show 1 slide at a time on mobile phones */
+                align-items:center;  
+
+            }
+                        .client-slide {
+                        width:80%;
+                         }
+        }
+
+        @media (max-width: 340px) {
+            .slide {
+                flex: 0 0 100%; /* Show 1 slide at a time on mobile phones */
+                align-items:center;  
+               padding: 0px;
+
+
+            }
+                        .client-slide {
+                        width:90%;
+                   padding: 0px;
+
                          }
         }
 
@@ -101,9 +131,10 @@
     border: 2px solid #d90429;
     border-radius: 5px;
     padding: 0 20px;
-    margin: 20px;
+    margin:auto;
+
     transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
-    height: 100%; /* Ensure full height */
+    height: 370px;/* Ensure full height */
 }
 
 
@@ -120,6 +151,7 @@
 @media (min-width: 792px) {
     .client-slide {
         min-width: 200px;
+        
     }
 }
 
@@ -257,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </head>
 <body>
     <center>
-    <h1 class="text-center" id="stats" style="color:#164193;">
+    <h1 class="text-center" id="stats" style="color:#164193;"> We are
     <span id="yearCount" style="color:#e20613;"><strong>0</strong></span> Years in Business<br>
     <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+</span> <br>
     <span id="userCount" style="color:#e20613;"><strong>0</strong>k+</span> Users
