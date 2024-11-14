@@ -26,6 +26,7 @@
            display: flex;
            justify-content: space-between;
            align-items: center;
+           text-align:left;
            transition: background-color 0.3s ease, color 0.3s ease;
        }
 
@@ -216,9 +217,18 @@
 
        <hr class="hr-line">
 
+<div class="faq-seven">
+    <h2 class="faq-page">Can my accountant access my account?</h2>
+    <div class="faq-body">
+        <p>Absolutely. Since your accounting system is connected to the cloud, they can use their own login to access reports like the general ledger, balance sheet, or cash flow statement whenever they need.</p>
+    </div>
+</div>
+<hr class="hr-line">
 
+   </div>
 
    </section>
+</div>
 </div>
    <!-- JavaScript -->
    <script>
@@ -246,3 +256,5 @@
            });
        });
    </script>
+</body>
+</html>

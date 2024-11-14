@@ -9,12 +9,13 @@
         .table-responsive {
             background-color:#f0f8ff;
             display: block;
-            width: 100%;
+            width: 80% !important;
             overflow-x: auto; /* Enable horizontal scrolling */
             -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
             border: 1px solid #ccc; /* Optional: border around the table */
             padding: 5px; /* Optional: padding around the table */
             font-size:20px;
+            margin:auto;
         }
 
         /* Table styling */
@@ -69,7 +70,7 @@
 <center>
    <div> <h3 ><strong>Accounting Software Comparison Chart</h3></strong></div></center><br>
 <div class="row">
-    <!-- <center> -->
+
 
     <div class="table-responsive"> <!-- Table responsive wrapper -->
         <table cellspacing="0" class="table table-bordered table-hover compare">
@@ -77,7 +78,7 @@
             <tr>
                 <th>&nbsp;</th>
                 <th colspan="3" style="text-align:center">
-                    <strong>Popular in SAARC Region <br><span style="font-size:11px">(for SMBs & SMEs)</span></strong>
+                    <strong>Popular in South Asia <br><span style="font-size:11px">(for SMBs & SMEs)</span></strong>
                 </th>
                 <th colspan="3" style="text-align:center">
                     <strong>Small & Medium Business (SMBs)</strong>
@@ -156,7 +157,9 @@
             </tbody>
         </table>
     </div>
+
 </div>
+
 
 </body>
 </html>

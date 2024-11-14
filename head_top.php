@@ -136,8 +136,8 @@ $show_button = isset($_SESSION['survey_completed']);
 <!-- Small Header Above Navbar -->
 <div class="small-header">
     <div class="contact-info">
-        <span style="margin-left: 15px;">Phone: +123 456 7890</span> |
-        <span>Website: <a href="https://www.ezone.com.np" target="_blank">www.ezone.com.np</a></span>
+        <span style="margin-left: 15px;">Email: wjdhege@gmail.com</span> |
+        <!-- <span>Website: <a href="https://www.ezone.com.np" target="_blank">www.ezone.com.np</a></span> -->
     </div>
     <div class="free_btn" id="get-it-free">
         <a href="#">

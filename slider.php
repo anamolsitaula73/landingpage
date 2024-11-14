@@ -289,11 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </head>
 <body>
     <center>
-    <h1 class="text-center" id="stats" style="color:#164193;"> We are
-    <span id="yearCount" style="color:#e20613;"><strong>0</strong></span> Years in Business<br>
-    <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+</span> <br>
-    <span id="userCount" style="color:#e20613;"><strong>0</strong>k+</span> Users
-</h1>
+   
         <div style="width:100%;">
             <div class="slideshow-container">
                 <div class="carousel-track">

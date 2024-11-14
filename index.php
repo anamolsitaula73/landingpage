@@ -31,10 +31,13 @@ body {
 
 </script>
 <body>
+
 <?php 
 session_start(); // Start session to store form data
 include('headerr.php')?>
+
 <div class="body-css">
+
 <?php include('certification.php') ?>  
 <br>
 <br>
@@ -53,6 +56,8 @@ include('headerr.php')?>
 <?php include('pricing.php') ?>  
 
 <?php include('faq.php') ?>  
+
+
 <?php include('buynow.php') ?>  
 
 

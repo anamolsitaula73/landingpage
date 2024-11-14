@@ -1,8 +1,6 @@
 <style>
     /* Targeting the Certifications section specifically */
     .Certifications {
-        padding: 20px;
-        background-color: #f5f5f5;
     }
 
     .Certifications .text-center.Certifications.blue3 h1 {
@@ -24,11 +22,31 @@
         display: inline-block;
         margin: 0 10px;
     }
+    .Certifications h1 {
+    font-size: 35px; /* Default size */
+}
+
+@media (max-width: 768px) {
+    .Certifications h1 {
+        font-size: 24px; /* Adjust for tablets and smaller screens */
+    }
+    .certifications{
+        padding:0px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .Certifications h1 {
+        font-size: 20px; /* Adjust for mobile devices */
+    }
+}
+
+
 
     /* Ensure all images have the same size */
     .Certifications ul#Certifications li img {
-        width: 110px;
-        height: 110px; /* Fixed size for all images */
+        width: 180px;
+        height: 180px; /* Fixed size for all images */
         object-fit: contain; /* Ensure images keep their aspect ratio */
     }
 
@@ -67,10 +85,55 @@
         }
     }
 </style>
+<script>
+
+
+function animateNumbers(element, target, duration) {
+    let start = 0;
+    const increment = target / (duration / 100);
+    const interval = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            start = target;
+            clearInterval(interval);
+        }
+        element.querySelector('strong').innerText = Math.floor(start);
+    }, 100);
+}
+
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Start the animation when the element is in view
+            animateNumbers(document.getElementById("schoolCount"), 1000, 2000);
+            animateNumbers(document.getElementById("yearCount"), 21, 2000);
+            animateNumbers(document.getElementById("userCount"), 300, 2000);
+            observer.unobserve(entry.target); // Stop observing after animation starts
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const target = document.getElementById("stats"); // Target the entire stats section
+    const observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.3 // Trigger when at least 10% of the target is visible
+    });
+
+    observer.observe(target);
+});
+console.log("Intersecting:", entry.isIntersecting);
+
+
+</script>
+<!-- <h1 class="text-center" id="stats" style="color:#164193;">
+<span>Celebrating </span><span id="yearCount" style="color:#e20613;"><strong> 0</strong></span> Years os Excellence<br>
+<span>Empowering</span> <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+ </span>Organizations <br>
+<span>Trusted by</span> <span id="userCount" style="color:#e20613;"><strong>0</strong>k+ </span> Users
+</h1> -->
 
 <div class="Certifications">
-    <div class="text-center Certifications blue3">
-        <h1 align="center"><b class="features-icon ">Certifications</b></h1>
+    <div class="text-center Certifications ">
+        <h1  style="color:#164193;" ><b class="features-icon ">Our Software has been recognized by</b></h1>
         <ul id="Certifications">
             <li><img src="assets/images/iso.png" class="img-responsive" title="Iso Nepal"></li>
             <li><img src="assets/images/microsoft-partner.png" class="img-responsive" title="Microsoft partner"></li>
@@ -78,3 +141,12 @@
         </ul>
     </div>
 </div>
+<br>
+
+<h1 class="text-center" id="stats" style="color:#164193;">
+<span>Celebrating </span><span id="yearCount" style="color:#e20613;"><strong> 0</strong></span> Years of Excellence,
+<span>Empowering</span> <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+ </span>Organizations, 
+<span>and Trusted by</span> <span id="userCount" style="color:#e20613;"><strong>0</strong>k+ </span> Users!
+</h1>
+<br>
+<br>

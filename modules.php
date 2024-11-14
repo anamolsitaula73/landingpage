@@ -150,73 +150,7 @@
     }
     
     </style>
-    <script>
 
-const clientSlides = document.querySelectorAll('.client-slide');
-
-function updateOpacity() {
-    const totalSlides = clientSlides.length;
-
-    clientSlides.forEach((slide, index) => {
-        if (index === 0 || index === totalSlides - 1) {
-            slide.style.opacity = '0.5'; // First and last slide
-        } else {
-            slide.style.opacity = '1'; // Middle slides
-        }
-    });
-}
-
-// Call updateOpacity to set the initial state
-updateOpacity();
-
-// Example function for sliding next (you can replace this with your actual sliding logic)
-let currentIndex = 0;
-
-function slideNext() {
-    currentIndex = (currentIndex + 1) % clientSlides.length; // Loop back to start
-    updateOpacity();
-}
-
-// Call slideNext every few seconds for demonstration (or based on your carousel logic)
-setInterval(slideNext, 3000);
-
-function animateNumbers(element, target, duration) {
-    let start = 0;
-    const increment = target / (duration / 100);
-    const interval = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-            start = target;
-            clearInterval(interval);
-        }
-        element.querySelector('strong').innerText = Math.floor(start);
-    }, 100);
-}
-
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Start the animation when the element is in view
-            animateNumbers(document.getElementById("schoolCount"), 1000, 2000);
-            animateNumbers(document.getElementById("yearCount"), 21, 2000);
-            animateNumbers(document.getElementById("userCount"), 300, 2000);
-            observer.unobserve(entry.target); // Stop observing after animation starts
-        }
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const target = document.getElementById("stats"); // Target the entire stats section
-    const observer = new IntersectionObserver(handleIntersection, {
-        threshold: 0.3 // Trigger when at least 10% of the target is visible
-    });
-
-    observer.observe(target);
-});
-console.log("Intersecting:", entry.isIntersecting);
-
-
-</script>
 <!-- <script>
     // JavaScript function to toggle content display
     function toggleContent(contentId) {
@@ -239,13 +173,6 @@ console.log("Intersecting:", entry.isIntersecting);
     }
   </script> -->
     <br>
-
-
-<h1 class="text-center" id="stats" style="color:#164193;">
-    <span id="yearCount" style="color:#e20613;"><strong>0</strong></span> Years in Business<br>
-    <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+</span> <br>
-    <span id="userCount" style="color:#e20613;"><strong>0</strong>k+</span> Users
-</h1>
 
 
 
