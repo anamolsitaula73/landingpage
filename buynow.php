@@ -13,7 +13,7 @@
         .promo-section .half-circle {
             width: 100%;
             height: 50vh;
-            background-color:#28a745;
+            background-color:#e20613;
             border-top-left-radius: 45%;
             border-top-right-radius: 45%;
             top: 0;
@@ -40,7 +40,7 @@
         }
 
          .buy-now-button-green {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: black;
             color: #fff !important;
             padding: 12px 24px;
             font-size: 2vw; /* Responsive font size for button */
@@ -54,7 +54,7 @@
 
         /* Hover effect */
         .buy-now-button-green:hover {
-            background-color: #2C3539;
+            background-color: black;
             /* color:black !important; */
         }
 
@@ -120,6 +120,6 @@
         </div>
 
     </div>
-
+   
 </body>
 </html>

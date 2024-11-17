@@ -8,7 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .solution-section {
-      background-color: #F6FFFA;
+      background-color: ;
       padding: 40px 0;
       color: #164193;
     }

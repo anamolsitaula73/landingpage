@@ -12,7 +12,7 @@
     padding: 50px;
     max-width: 1400px;
     margin: auto;
-    background-color:white;
+    /* background-color:#f4faff; */
 }
 
 /* Individual Testimonial Cards */
@@ -23,6 +23,9 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease-in-out;
     min-height: 200px; /* Ensures consistent card height */
+    display: flex;
+    flex-direction: column; /* Ensures content is arranged vertically */
+    justify-content: space-between;  /* Pushes content to top and bottom */
 }
 
 .ezone-testimonial-wrapper .ezone-testimonial-card:hover {

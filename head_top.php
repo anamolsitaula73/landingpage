@@ -89,7 +89,7 @@ $show_button = isset($_SESSION['survey_completed']);
 }
 
 .free_btn a {
-    background-color: #28a745; /* Green shade representing free */
+    background-color:#e20613; /* Green shade representing free */
     color: white;
     padding: 12px 20px;
     border-radius: 4px;
@@ -98,7 +98,7 @@ $show_button = isset($_SESSION['survey_completed']);
 }
 
 .free_btn a:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: black; 
     color: white;
     text-decoration: none;
 }
@@ -140,9 +140,8 @@ $show_button = isset($_SESSION['survey_completed']);
         <!-- <span>Website: <a href="https://www.ezone.com.np" target="_blank">www.ezone.com.np</a></span> -->
     </div>
     <div class="free_btn" id="get-it-free">
-        <a href="#">
-            Get it Free
-        </a>
+    <a href="#pricing" >Get Now</a>
+
     </div>
 
   

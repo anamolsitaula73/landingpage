@@ -1,6 +1,7 @@
 <style>
     /* Targeting the Certifications section specifically */
     .Certifications {
+        text-align:center;
     }
 
     .Certifications .text-center.Certifications.blue3 h1 {
@@ -24,11 +25,20 @@
     }
     .Certifications h1 {
     font-size: 35px; /* Default size */
+    margin:auto !important;
+}
+.Certifications h3 {
+    font-size: 25px; /* Default size */
+    margin:auto !important;'
+    color:black !important ;
 }
 
 @media (max-width: 768px) {
     .Certifications h1 {
         font-size: 24px; /* Adjust for tablets and smaller screens */
+    }
+    .Certifications h3 {
+        font-size: 18px; /* Adjust for tablets and smaller screens */
     }
     .certifications{
         padding:0px !important;
@@ -38,6 +48,9 @@
 @media (max-width: 480px) {
     .Certifications h1 {
         font-size: 20px; /* Adjust for mobile devices */
+    }
+    .Certifications h3 {
+        font-size: 14px; /* Adjust for tablets and smaller screens */
     }
 }
 
@@ -116,7 +129,7 @@ function handleIntersection(entries, observer) {
 document.addEventListener("DOMContentLoaded", () => {
     const target = document.getElementById("stats"); // Target the entire stats section
     const observer = new IntersectionObserver(handleIntersection, {
-        threshold: 0.3 // Trigger when at least 10% of the target is visible
+        threshold: 1 // Trigger when at least 10% of the target is visible
     });
 
     observer.observe(target);
@@ -132,21 +145,17 @@ console.log("Intersecting:", entry.isIntersecting);
 </h1> -->
 
 <div class="Certifications">
-    <div class="text-center Certifications ">
         <h1  style="color:#164193;" ><b class="features-icon ">Our Software has been recognized by</b></h1>
         <ul id="Certifications">
             <li><img src="assets/images/iso.png" class="img-responsive" title="Iso Nepal"></li>
             <li><img src="assets/images/microsoft-partner.png" class="img-responsive" title="Microsoft partner"></li>
             <li><img src="assets/images/worldbank.png" class="img-responsive" title="World Bank"></li>
         </ul>
-    </div>
-</div>
-<br>
-
-<h1 class="text-center" id="stats" style="color:#164193;">
+    <h3 class="" id="stats" style="color:#164193;">
 <span>Celebrating </span><span id="yearCount" style="color:#e20613;"><strong> 0</strong></span> Years of Excellence,
 <span>Empowering</span> <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+ </span>Organizations, 
 <span>and Trusted by</span> <span id="userCount" style="color:#e20613;"><strong>0</strong>k+ </span> Users!
-</h1>
-<br>
-<br>
+</h3>
+
+</div>
+

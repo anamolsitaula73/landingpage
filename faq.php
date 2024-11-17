@@ -13,7 +13,7 @@
 
        .faq-page {
            /* background-color: white; */
-        background-color:#F6FFFA !important;
+        /* background-color:#F6FFFA !important; */
 
            color: #164193 !important;
            padding: 15px;
@@ -35,7 +35,7 @@
        }
 
        .faq-page.active {
-           color: white;
+           background-color: white !important;
        }
 
        .faq-page::after {
@@ -150,7 +150,7 @@
 
 <body class="faqs">
 
-<div style="background-color:#F6FFFA !important;">
+<div >
 
 
   <br>

@@ -82,7 +82,7 @@
     </div>
 
     <!-- <iframe width="864" height="486" src="https://www.youtube.com/embed/x686oJ8gCes" title="what is e-Accounting?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-      <div style="background-color:#F6FFFA;">
+      <div >
     <br>
 <div class="video-container">
     <div class="video-responsive">

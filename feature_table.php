@@ -30,7 +30,7 @@
 
 /* Company Logo Styling */
 .company-logo {
-    width: 80px;
+    width: 120px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -87,8 +87,8 @@
 <div class="comparison-table-wrapper">
   <table class="comparison-table">
     <thead>
-      <tr>
-        <th><h2>Features</h2></th>
+      <tr >
+        <th ><h2 ><span style="color:black;">Features</span></h2></th>
         <th>
           <img src="assets/images/ii.png" alt="eAccounting" class="company-logo">
         </th>
@@ -108,7 +108,7 @@
           <img src="assets/images/netsuite.png" alt="NetSuite" class="company-logo">
         </th>
         <th>
-          <img src="assets/images/zoho books.png" alt="Zoho Books" class="company-logo">
+          <img src="assets/images/zoho.png" alt="Zoho Books" class="company-logo">
         </th>
       </tr>
     </thead>

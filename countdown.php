@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-   
-    
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
     .main-countdown {
         width: 100%;
-        /* height: 100vh; */
-        /* background: url('../image/1802071.webp') center center; */
-        /* background-size: cover; */
     }
-    
+
     .overlay-countdown {
         width: 100%;
         height: 100%;
@@ -23,36 +19,67 @@
         align-items: center;
         flex-direction: column;
         color: red;
-       /* background-color: #28a745; */
-        /* background-color: rgba(0, 0, 0, 0.7); */
     }
-    
+
     .title {
         margin-top: 10px;
         color: white;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.5vw; /* Responsive font size based on viewport width */
     }
-    
+
     .col {
-        /* margin-top: 20px; */
         width: 90%;
         display: flex;
         justify-content: center;
         color: white;
+        margin-bottom:3vw;
+        margin-top:2.2vw;
+
+
     }
-    
+
     .col div {
-        width: 250px;
         text-align: center;
-        font-size:20px;
+        font-size: 1.5vw; /* Responsive font size */
+        margin: 2px;
     }
-    .col input{
-       font-size:40px;
-       width:100px;
+
+    .col input {
+        font-size: 3vw; /* Responsive font size */
+        width: 7vw; /* Responsive width */
+        text-align:center;
+
     }
+
+    .col label {
+        font-size: 2.5vw; /* Responsive font size */
+        color: white;
+    }
+
  
-  </style>
+
+   
+    /* Additional breakpoints for fine-tuning on very small screens */
+    @media (max-width: 480px) {
+        .title {
+            font-size: 3vw;
+        }
+        .col div {
+            font-size: 2vw;
+        }
+        .col input {
+            font-size: 16px;
+            width: 12vw;
+        }
+        .buy-now-button-green {
+            font-size: 4vw;
+            padding: 2vw 4vw;
+        }
+    }
+</style>
+
+
 </head>
 
 <body>
@@ -81,11 +108,9 @@
                     <label for="" style="color:white;">Seconds</label>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
+           
 
-            <a href="#pricing" class="buy-now-button-green">Get Now</a>
+            <a href="https://accounting.ezonecloud.com/CompanyCreate.aspx" target="_blank" class="buy-now-button-green">Get Now</a>
 
         </div>
       
@@ -95,7 +120,7 @@
         <br>
 </center>
     <script>
-        const endDate = "29 November 2024 20:20:00 GMT+1100"; // Australian Eastern Daylight Time (AEDT)
+        const endDate = "2 December 2024 20:20:00 GMT+1100"; // Australian Eastern Daylight Time (AEDT)
 
         const inputs = document.querySelectorAll(".main-countdown .col input");
         

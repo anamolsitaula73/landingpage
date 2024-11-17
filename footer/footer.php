@@ -31,13 +31,15 @@
     background-color: #960018 !important; /* Darker shade for hover effect */
 }
 .footer_getfree{
-  background-color:#28a745 !important; 
-  color:red !important;
+  background-color:#e20613 !important; 
+  color:white!important;
   padding: 10px;
+  padding-left:20px;
+  padding-right:20px;
   font-size:12px;
 }
 .footer_getfree:hover {
-  background-color: #218838 !important; 
+  background-color: #e20613 !important; 
 }
 .footer_getfree a{
   color:white !important;
@@ -73,10 +75,10 @@
           </div>
           <div class="col-md-3">
             <ul class="list-unstyled nav-links">
-              <li><a href="https://eaccounting.ezone.com.np/about-us" target="_blank" >About Us</a></li>
-              <li><a href="https://eaccounting.ezone.com.np/pricing" target="_blank" >Pricing</a></li>
-              <li><a href="https://eaccounting.ezone.com.np/what-you-get" target="_blank" >what-you-get</a></li>
-              <li><a href="https://eaccounting.ezone.com.np/contacts" target="_blank" >Contacts</a></li>
+              <li><a href="https://ezone.com.np" target="_blank" >About Us</a></li>
+              <li><a href="#pricing" >Pricing</a></li>
+              <!-- <li><a href="https://eaccounting.ezone.com.np/what-you-get" target="_blank" >what-you-get</a></li> -->
+              <!-- <li><a href="https://eaccounting.ezone.com.np/contacts" target="_blank" >Contacts</a></li> -->
             </ul>
           </div>
          
@@ -96,9 +98,10 @@
               <li><a href="#"><span class="icon-pinterest"></span></a></li>
               <li><a href="#"><span class="icon-youtube"></span></a></li>
             </ul>
-            <!-- <p class=""><a href="#" class="btn btn-tertiary">Contact Us</a></p> -->
-            <div class="footer_getfree btn " style="" id="get-it-free-footer"> <a href="#"><strong> Get eAccounting for free </strong></a>
-    </div>
+            <a href="https://accounting.ezonecloud.com/CompanyCreate.aspx" target="_blank">
+                        <button class="footer_getfree btn ">Get Now</button>
+                    </a>
+ 
   
           </div>
         </div> 

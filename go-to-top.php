@@ -8,10 +8,10 @@
   font-size: 20px;
   border: none;
   outline: none;
-  background-color: #e20613;
+  background-color: #164193;
   color: white;
   cursor: pointer;
-  padding: 17px;
+  padding: 10px;
   border-radius: 10px;
   transition: transform 1s ease, opacity 1s ease;
   font-family: "Arial Unicode MS", "Segoe UI Symbol", sans-serif;

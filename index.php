@@ -9,7 +9,7 @@
 <style>
    body {
     width:100%;
-    background-color:#F6FFFA !important;
+    /* background-color:#f4faff !important; */
 
 
 }
@@ -43,7 +43,8 @@ include('headerr.php')?>
 <br>
 <br>
 <?php include('compare_table.php') ?>  
-<?php include('features.php') ?>  
+<br>
+<?php include('feature_table.php') ?>  
 <hr style=" border-top: 3.5px solid #164193;">
 <?php include('solution.php') ?>  
 <?php include('popup.php') ?>
@@ -54,6 +55,8 @@ include('headerr.php')?>
 
 <?php include('slider.php') ?>  
 <?php include('pricing.php') ?>  
+<?php include('testimonial.php') ?>  
+
 
 <?php include('faq.php') ?>  
 

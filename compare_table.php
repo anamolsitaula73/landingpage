@@ -7,14 +7,13 @@
     <style>
         /* Responsive table wrapper */
         .table-responsive {
-            background-color:#f0f8ff;
+            background-color:;
             display: block;
-            width: 80% !important;
+            width: 90% !important;
             overflow-x: auto; /* Enable horizontal scrolling */
             -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
-            border: 1px solid #ccc; /* Optional: border around the table */
             padding: 5px; /* Optional: padding around the table */
-            font-size:20px;
+            font-size:16px;
             margin:auto;
         }
 
@@ -27,7 +26,7 @@
         }
 
         .table-bordered th, .table-bordered td {
-            border: 1.5px solid #164193;
+            border: 0.1px solid #ddd !important;
             padding: 10px;
             text-align: center; /* Align content to center */
             white-space: nowrap; /* Prevent text wrapping */
@@ -38,7 +37,6 @@
 
         /* Hover effect for table rows */
         .table-bordered tr:hover {
-            background-color: red !important; /* Gray background on hover */
             transition: background-color 0.3s ease; /* Smooth transition for hover effect */
         }
 
@@ -59,7 +57,7 @@
         /* Title heading styling with requested color */
         h3 {
             text-align: center;
-            font-size: 24px;
+            font-size: 20px;
             margin-bottom: 20px;
             color: #164193; /* Title text color */
         }
@@ -142,7 +140,7 @@
                 <td style="text-align:center">World</td>
             </tr>
             <tr>
-                <th><strong>Avg. price per month per user (USD)</strong></th>
+                <th><strong>Price/Month(USD)</strong></th>
                 <td style="text-align:center">$30</td>
                 <td style="text-align:center">$25</td>
                 <td style="text-align:center;color:#e20613;">$20.99</td>
