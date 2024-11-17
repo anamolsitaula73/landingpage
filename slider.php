@@ -13,6 +13,9 @@
             overflow: hidden; /* Hide overflow */
         }
 
+        .slider-wrapper{
+  width:85%;
+}
         /* Carousel track */
         .carousel-track {
             display: flex; /* Use Flexbox to display slides in a row */
@@ -31,46 +34,47 @@
 
         /* Navigation buttons */
         .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            padding: 16px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.8);
+          padding: 10px 20px;
+            background-color: #d90429;
             color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .toggle-btn {
+            padding: 10px 20px;
+            background-color: #d90429;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius:20px;
+
+            font-size: 16px;
+            margin-top: 15px;
         }
 
-        .prev {
-            left: 0;
-            border-radius: 0 3px 3px 0;
+        .toggle-btn:hover {
+            background-color: black;
         }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
+      
 
         .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: black;
+            color:white;
         }
 
-        /* Dots styling */
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
+        @media (max-width: 1500px) {
+          .slider-wrapper{
+                      width:95%;
+                   }
         }
 
-        .active, .dot:hover {
-            background-color: #717171;
+        @media (max-width: 1340px) {
+          .slider-wrapper{
+                      width:100%;
+                   }
         }
 
         /* Media Queries to adjust the number of slides based on screen size */
@@ -78,6 +82,7 @@
             .slide {
                 flex: 0 0 50%; /* Show 2 slides at a time on tablets */
             }
+                    
         }
 
         @media (max-width: 699px) {
@@ -146,6 +151,7 @@
     object-fit: contain;
     display: block;
 }
+
 
 /* Responsive Settings */
 @media (min-width: 792px) {
@@ -290,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <body>
     <center>
    
-        <div style="width:100%;">
+        <div class="slider-wrapper">
             <div class="slideshow-container">
                 <div class="carousel-track">
 
@@ -509,14 +515,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <button class="toggle-btn" onclick="toggleAutoplay()"><i class="fas fa-play"></i> <!-- Play icon --></button>
                 <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
         </div>
     </center>
-
     <script>
         let slideIndex = 0;
         const totalSlides = document.querySelectorAll('.mySlides').length;
+        let autoplayInterval;
+        let isAutoplayActive = true;
 
         function updateSlides() {
             const track = document.querySelector('.carousel-track');
@@ -539,8 +547,24 @@ document.addEventListener("DOMContentLoaded", () => {
             return 3;  // Desktop: 3 slides
         }
 
-        // Auto-slide every 3 seconds
-        setInterval(function() {
+        // Function to start or stop autoplay
+        function toggleAutoplay() {
+            if (isAutoplayActive) {
+                clearInterval(autoplayInterval);  // Stop autoplay
+                document.querySelector('.toggle-btn i').classList.remove('fa-play');
+                document.querySelector('.toggle-btn i').classList.add('fa-pause'); // Change to Pause icon
+            } else {
+                autoplayInterval = setInterval(function() {
+                    plusSlides(1);
+                }, 3000);  // Start autoplay
+                document.querySelector('.toggle-btn i').classList.remove('fa-pause');
+                document.querySelector('.toggle-btn i').classList.add('fa-play'); // Change to Play icon
+            }
+            isAutoplayActive = !isAutoplayActive;  // Toggle state
+        }
+
+        // Auto-slide every 3 seconds initially
+        autoplayInterval = setInterval(function() {
             plusSlides(1);
         }, 3000);
 
