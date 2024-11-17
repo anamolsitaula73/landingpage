@@ -10,7 +10,7 @@
 
 .whatsapp-popup {
     position: fixed;
-    bottom: 120px; /* Ensure this is below your "Go to top" button */
+    bottom: 110px; /* Ensure this is below your "Go to top" button */
     right: 13px; /* Adjust based on your sidebar position */
     z-index: 999; /* Lower than the "Go to top" button */
     background-color: #25d366;
@@ -22,8 +22,8 @@
 }
 
 .whatsapp-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: block;
     transition: transform 0.3s ease;
 }

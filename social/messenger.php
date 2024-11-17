@@ -9,7 +9,7 @@
 
 .messenger-popup {
     position: fixed;
-    bottom: 200px; /* Adjust based on your layout */
+    bottom: 180px; /* Adjust based on your layout */
     right: 13px; /* Adjust based on your sidebar position */
     z-index: 999; /* Lower than the "Go to top" button */
     background-color: #0084ff; /* Messenger blue color */
@@ -21,8 +21,8 @@
 }
 
 .messenger-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: block;
     transition: transform 0.3s ease;
 }

@@ -42,11 +42,15 @@ include('headerr.php')?>
 <br>
 <br>
 <br>
+<?php include('features.php') ?>  
+
 <?php include('compare_table.php') ?>  
+
 <br>
 <?php include('feature_table.php') ?>  
 <hr style=" border-top: 3.5px solid #164193;">
 <?php include('solution.php') ?>  
+
 <?php include('popup.php') ?>
 <?php include('go-to-top.php') ?>
 
