@@ -254,7 +254,32 @@
         grid-template-columns: repeat(2, 1fr); /* 2 modules per row */
       }
     }
-    
+    .slider-header{
+      font-size: 32px;
+      text-align:center;
+
+            margin-bottom: 30px;
+            font-weight:bold;
+            color:#164193!important;
+    }
+    @media (min-width: 1400px) {
+      .slider-header {
+        font-size: 36px; /* Larger font for header */
+    }
+    }
+
+    @media (max-width: 945px) {
+            .slider-header {
+                font-size: 28px;
+            }
+          }
+
+          
+        @media (max-width: 480px) {
+            .slider-header {
+                font-size: 24px;
+            }
+          }
     </style>
     <script>
 
@@ -297,6 +322,10 @@ document.addEventListener("DOMContentLoaded", () => {
     <center>
    
         <div class="slider-wrapper">
+          <br><br>
+
+          <h1 class="slider-header">Everything You Get in One Place.</h1>
+          <br>
             <div class="slideshow-container">
                 <div class="carousel-track">
 

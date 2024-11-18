@@ -83,9 +83,40 @@
     background-color: #f9f9f9;
 }
 
+
+.feature-header{
+      font-size: 32px;
+      text-align:center;
+
+            margin-bottom: 30px;
+            font-weight:bold;
+            color:#164193!important;
+    }
+    @media (min-width: 1400px) {
+      .feature-header {
+        font-size: 36px; /* Larger font for header */
+    }
+    }
+
+    @media (max-width: 945px) {
+            .feature-header {
+                font-size: 28px;
+            }
+          }
+
+          
+        @media (max-width: 480px) {
+            .feature-header {
+                font-size: 24px;
+            }
+          }
 </style>
 <div class="comparison-table-wrapper">
+  <br>
   <table class="comparison-table">
+  <h1 class="feature-header"> Why we are Better ? </h1>
+  <br>
+
     <thead>
       <tr >
         <th ><h2 ><span style="color:black;">Features</span></h2></th>

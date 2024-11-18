@@ -145,12 +145,14 @@ console.log("Intersecting:", entry.isIntersecting);
 </h1> -->
 
 <div class="Certifications">
-        <h1  style="color:#164193;" ><b class="features-icon ">Our Software has been recognized by</b></h1>
+    <h1 class=" solution-header"> Our Software has been recognized by </h1>
+        <!-- <h1  style="color:#164193;" ><b class="features-icon ">Our Software has been recognized by</b></h1><br> -->
         <ul id="Certifications">
             <li><img src="assets/images/iso.png" class="img-responsive" title="Iso Nepal"></li>
             <li><img src="assets/images/microsoft-partner.png" class="img-responsive" title="Microsoft partner"></li>
             <li><img src="assets/images/worldbank.png" class="img-responsive" title="World Bank"></li>
         </ul>
+        <br>
     <h3 class="" id="stats" style="color:#164193;">
 <span>Celebrating </span><span id="yearCount" style="color:#e20613;"><strong> 0</strong></span> Years of Excellence,
 <span>Empowering</span> <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+ </span>Organizations, 

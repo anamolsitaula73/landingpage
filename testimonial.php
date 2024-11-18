@@ -9,7 +9,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
     max-width: 1400px;
     margin: auto;
     /* background-color:#f4faff; */
@@ -117,10 +119,43 @@
         height: 50px;
     }
 }
+/* .testimonial-header{
+    font-size: clamp(18px, 8vw, 36px);
+  font-weight: bold;
+  color: #164193;
+  text-align:center;
+} */
 
+.testimonial-header{
+      font-size: 32px;
+            margin-bottom: 30px;
+            font-weight:bold;
+            text-align:center;
+            color:#164193!important;
+    }
+    @media (min-width: 1400px) {
+      .testimonial-header {
+        font-size: 36px; /* Larger font for header */
+    }
+    }
+
+    @media (max-width: 945px) {
+            .testimonial-header {
+                font-size: 28px;
+            }
+          }
+
+          
+        @media (max-width: 480px) {
+            .testimonialr-header {
+                font-size: 24px;
+            }
+          }
     </style>
 </head>
 <body>
+    <h1 class="testimonial-header">Hear what people have to say</h1>
+    <br><br>
     <section class="ezone-testimonial-wrapper">
         <div class="ezone-testimonial-card">
             <p class="ezone-testimonial-text">We expected a solution that was quick, detailed, and easy to use – we have now the eZoneBooks.</p>

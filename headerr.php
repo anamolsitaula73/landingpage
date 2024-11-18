@@ -3,8 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .text-content{
-            background-color: #164193;
-            color:white;
+            /* background-color: #164193; */
+            color:black !important;
         }
         .text-content,h2 {
             color:white !important;
@@ -63,7 +63,13 @@
         width: 100%; /* Full width for mobile devices */
     }
 }
-
+.header-text{
+    font-size: clamp(16px, 4vw, 36px);
+  font-weight: bold;
+  color: #164193;
+  text-align:center;
+  /* color:white; */
+}
 
     </style>
 </head>
@@ -72,15 +78,11 @@
     <div class="section">
 
 <div class="text-content" >
-<br>
-<br>
-<br>
 
-        <h1><strong>You will <b>Never</b> See a Price this Low on a Accounting Software this Good Again.</strong></h1>
+<br>
+        <h1 class=" header-text" ><strong> Only for a limited time</strong></h1>
         
-        <br>
-        <br>
-        <br>
+     
     </div>
 
     <!-- <iframe width="864" height="486" src="https://www.youtube.com/embed/x686oJ8gCes" title="what is e-Accounting?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->

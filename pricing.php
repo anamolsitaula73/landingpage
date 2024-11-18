@@ -16,6 +16,9 @@
         .pricing-header {
             font-size: 32px;
             margin-bottom: 30px;
+            font-weight:bold;
+            text-align:center;
+
             color:#164193!important;
         }
 

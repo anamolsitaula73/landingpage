@@ -58,12 +58,36 @@
             margin-bottom: 20px;
             color: #164193; /* Title text color */
         }
+        .comparison-header{
+      font-size: 32px;
+      text-align:center;
 
+            margin-bottom: 30px;
+            font-weight:bold;
+            color:#164193!important;
+    }
+    @media (min-width: 1400px) {
+      .comparison-header {
+        font-size: 36px; /* Larger font for header */
+    }
+    }
+
+    @media (max-width: 945px) {
+            .comparison-header {
+                font-size: 28px;
+            }
+          }
+
+          
+        @media (max-width: 480px) {
+            .comparison-header {
+                font-size: 24px;
+            }
+          }
     </style>
 </head>
 <body>
-<center>
-   <div> <h3 ><strong>Accounting Software Comparison Chart</h3></strong></div></center><br>
+   <h2 class="comparison-header">Accounting Software Comparison Chart</h2>
 <div class="row">
 
 

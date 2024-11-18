@@ -10,7 +10,7 @@
     .product-current {
       width: 80%;
       margin: auto;
-      padding-bottom:100px;
+      padding-bottom:10 0px;
       padding-top:100px;
     }
     
@@ -159,6 +159,7 @@
   </style>
 </head>
 <body>
+  <h2 class="feature-header">What we Promise !</h2>
   <div class="product-current">
     <div class="product-capabilities">
       <!-- Hidden Feature List for Smaller Screens -->

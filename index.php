@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <!-- <style>
+    <style>
         /* General styles */
         body {
             font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -19,6 +19,7 @@
 
         .body-css {
             width: 100%;
+            
         }
 
         /* Section styles */
@@ -34,7 +35,7 @@
             opacity: 1; /* Fade in */
             filter: blur(0); /* Remove blur */
         }
-    </style> -->
+    </style>
 </head>
 <body>
 
@@ -51,64 +52,75 @@ include('go-to-top.php');
     <!-- Sections with animations -->
     <div class="section" id="certification-section">
         <?php include('certification.php') ?>  
+        <br><br>
     </div>
-    <!-- <br><br><br> -->
     <div class="section" id="features-section">
+    <br><br><br>
+
         <?php include('features.php') ?>  
     </div>
-    <!-- <br><br><br> -->
     <div class="section" id="compare-table-section">
+    <br><br><br>
+
         <?php include('compare_table.php') ?>  
     </div>
 <!-- `<br><br><br><br><br> -->
     <div class="section" id="feature-table-section">
+        <br>
         <?php include('feature_table.php') ?>  
     </div>
-<!-- ``<br><br><br><br> -->
     <div class="section" id="solution-section">
+<br><br><br>
+
         <?php include('solution.php') ?>  
     </div>
 <!-- <br><br><br><br> -->
     <div class="section">
         <?php include('slider.php') ?>  
     </div>
-    <!-- <br><br><br><br> -->
     
 
     <div class="section">
+    <br><br><br><br>
+
         <?php include('pricing.php') ?>  
     </div>
-    <!-- <br><br><br> -->
 
     <div class="section">
+<br><br>
+<br><br>
         <?php include('testimonial.php') ?>  
     </div>
-    <!-- <br> -->
 
     <div class="section">
+
         <?php include('faq.php') ?>  
     </div>
+    <div class="section">
+
+<?php include('buynow.php') ?>  
     <!-- <br> -->
 
     <div class="footer-div">
         <?php include('footer/footer.php'); ?>
     </div>
+    </div>
 </div>
 
-<!-- <script>
+<script>
     // Function to determine the threshold based on screen size
     function getThreshold() {
         const screenWidth = window.innerWidth;
 
         if (screenWidth < 768) {
             // Small screens (mobile)
-            return 0.3; // Trigger when 10% is visible
+            return 0.2; // Trigger when 10% is visible
         } else if (screenWidth < 1020) {
             // Medium screens (tablet)
             return 0.3; // Trigger when 30% is visible
         } else {
             // Large screens (desktop)
-            return 0.5; // Trigger when 50% is visible
+            return 0.3; // Trigger when 50% is visible
         }
     }
 
@@ -154,7 +166,7 @@ include('go-to-top.php');
 
     // Add a listener to handle screen resize
     window.addEventListener('resize', reinitializeObserver);
-</script> -->
+</script>
 
 </body>
 </html>

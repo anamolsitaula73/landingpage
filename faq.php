@@ -151,9 +151,6 @@
 <body class="faqs">
 
 <div >
-
-
-  <br>
    <div class="faq-section">
  FAQs
 </div>

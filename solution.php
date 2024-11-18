@@ -86,7 +86,32 @@
     }
 
     }
-    
+    .solution-header{
+      font-size: 32px;
+      text-align:center;
+
+            margin-bottom: 30px;
+            font-weight:bold;
+            color:#164193!important;
+    }
+    @media (min-width: 1400px) {
+      .solution-header {
+        font-size: 36px; /* Larger font for header */
+    }
+    }
+
+    @media (max-width: 945px) {
+            .solution-header {
+                font-size: 28px;
+            }
+          }
+
+          
+        @media (max-width: 480px) {
+            .solution-header {
+                font-size: 24px;
+            }
+          }
   </style>
 </head>
 
@@ -95,7 +120,8 @@
   <!-- Solution Section -->
   <section class="solution-section">
     <div class="container">
-      <h1 class="solution-title" style=""><strong>e-Accounting Solutions</strong></h1>
+      <h1 class="solution-header" style=""><strong><span style="color:#e20613">e</span>-Accounting Solutions</strong></h1>
+      <br>
       <div class="solution-grid">
         <!-- Solution 1 -->
         <div class="solution-item">
