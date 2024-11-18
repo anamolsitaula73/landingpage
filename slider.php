@@ -322,7 +322,6 @@ document.addEventListener("DOMContentLoaded", () => {
     <center>
    
         <div class="slider-wrapper">
-          <br><br>
 
           <h1 class="slider-header">Everything You Get in One Place.</h1>
           <br>

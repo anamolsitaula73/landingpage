@@ -88,6 +88,8 @@
 </head>
 <body>
    <h2 class="comparison-header">Accounting Software Comparison Chart</h2>
+   
+
 <div class="row">
 
 

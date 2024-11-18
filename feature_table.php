@@ -112,10 +112,8 @@
           }
 </style>
 <div class="comparison-table-wrapper">
-  <br>
   <table class="comparison-table">
   <h1 class="feature-header"> Why we are Better ? </h1>
-  <br>
 
     <thead>
       <tr >

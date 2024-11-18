@@ -155,7 +155,7 @@
 </head>
 <body>
     <h1 class="testimonial-header">Hear what people have to say</h1>
-    <br><br>
+    <br>
     <section class="ezone-testimonial-wrapper">
         <div class="ezone-testimonial-card">
             <p class="ezone-testimonial-text">We expected a solution that was quick, detailed, and easy to use – we have now the eZoneBooks.</p>

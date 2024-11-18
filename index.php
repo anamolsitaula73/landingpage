@@ -60,13 +60,19 @@ include('go-to-top.php');
         <?php include('features.php') ?>  
     </div>
     <div class="section" id="compare-table-section">
+    
     <br><br><br>
+    <br><br>
 
         <?php include('compare_table.php') ?>  
+
     </div>
+    <br><br>
+    <br><br>
+
 <!-- `<br><br><br><br><br> -->
     <div class="section" id="feature-table-section">
-        <br>
+        <br><br>
         <?php include('feature_table.php') ?>  
     </div>
     <div class="section" id="solution-section">
@@ -76,6 +82,7 @@ include('go-to-top.php');
     </div>
 <!-- <br><br><br><br> -->
     <div class="section">
+        <br><br>
         <?php include('slider.php') ?>  
     </div>
     
@@ -83,12 +90,12 @@ include('go-to-top.php');
     <div class="section">
     <br><br><br><br>
 
-        <?php include('pricing.php') ?>  
+        <?php include('pricing.php') ?> 
+<br><br>
+
     </div>
 
     <div class="section">
-<br><br>
-<br><br>
         <?php include('testimonial.php') ?>  
     </div>
 
@@ -120,7 +127,7 @@ include('go-to-top.php');
             return 0.3; // Trigger when 30% is visible
         } else {
             // Large screens (desktop)
-            return 0.3; // Trigger when 50% is visible
+            return 0.35; // Trigger when 50% is visible
         }
     }
 
