@@ -120,7 +120,6 @@
         <br>
 </center>
     <script>
-        const endDate = "2 December 2024 20:20:00 GMT+1100"; // Australian Eastern Daylight Time (AEDT)
 
         const inputs = document.querySelectorAll(".main-countdown .col input");
         
