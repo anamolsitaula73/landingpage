@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eAccounting</title>
+    <title>e-Accounting - Online Accounting, Payroll, Inventory & Billing</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- <style>
         /* General styles */
         body {
             font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color:white !important;
         }
 
         .body-css {
@@ -20,17 +23,18 @@
 
         /* Section styles */
         .section {
-            overflow-x:hidden;
+            overflow-x: hidden;
             opacity: 0; /* Initially hidden */
-            transition: opacity 1s ease; /* Smooth fade transition */
+            filter: blur(10px); /* Start with blur */
+            transition: opacity 0.2s ease, filter 0.2s ease; /* Smooth fade and blur transition */
         }
 
         /* When the section becomes visible */
         .section.visible-fade {
-            opacity: 1; /* Fade in when section is in view */
+            opacity: 1; /* Fade in */
+            filter: blur(0); /* Remove blur */
         }
-
-    </style>
+    </style> -->
 </head>
 <body>
 
@@ -41,61 +45,81 @@ include('social/messenger.php');
 include('social/whatsapp.php');
 include('go-to-top.php');
 ?>
-
+<br><br>
 <div class="body-css">
 
     <!-- Sections with animations -->
     <div class="section" id="certification-section">
         <?php include('certification.php') ?>  
     </div>
-
+    <!-- <br><br><br> -->
     <div class="section" id="features-section">
         <?php include('features.php') ?>  
     </div>
-
+    <!-- <br><br><br> -->
     <div class="section" id="compare-table-section">
-    <?php include('compare_table.php') ?>  
-
+        <?php include('compare_table.php') ?>  
     </div>
-
+<!-- `<br><br><br><br><br> -->
     <div class="section" id="feature-table-section">
         <?php include('feature_table.php') ?>  
     </div>
-
+<!-- ``<br><br><br><br> -->
     <div class="section" id="solution-section">
         <?php include('solution.php') ?>  
     </div>
-
+<!-- <br><br><br><br> -->
     <div class="section">
         <?php include('slider.php') ?>  
     </div>
+    <!-- <br><br><br><br> -->
+    
 
     <div class="section">
         <?php include('pricing.php') ?>  
     </div>
+    <!-- <br><br><br> -->
 
     <div class="section">
         <?php include('testimonial.php') ?>  
     </div>
+    <!-- <br> -->
 
     <div class="section">
         <?php include('faq.php') ?>  
     </div>
+    <!-- <br> -->
 
-        <div class="footer-div">
-            <?php include('footer/footer.php'); ?>
-        </div>
+    <div class="footer-div">
+        <?php include('footer/footer.php'); ?>
+    </div>
 </div>
 
-<script>
-    // Use Intersection Observer to handle fade-in and fade-out effects
+<!-- <script>
+    // Function to determine the threshold based on screen size
+    function getThreshold() {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth < 768) {
+            // Small screens (mobile)
+            return 0.3; // Trigger when 10% is visible
+        } else if (screenWidth < 1020) {
+            // Medium screens (tablet)
+            return 0.3; // Trigger when 30% is visible
+        } else {
+            // Large screens (desktop)
+            return 0.5; // Trigger when 50% is visible
+        }
+    }
+
+    // Initialize Intersection Observer
     const sections = document.querySelectorAll('.section');
 
-    const observerOptions = {
-        threshold: 0.2, // Trigger when 40% of the section is visible
+    let observerOptions = {
+        threshold: getThreshold(), // Initial threshold based on screen size
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    let observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // Section is visible, apply fade-in effect
@@ -107,11 +131,30 @@ include('go-to-top.php');
         });
     }, observerOptions);
 
+    // Function to reinitialize the observer on screen resize
+    function reinitializeObserver() {
+        observer.disconnect(); // Stop observing with the old threshold
+        observerOptions.threshold = getThreshold(); // Update threshold
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible-fade');
+                } else {
+                    entry.target.classList.remove('visible-fade');
+                }
+            });
+        }, observerOptions);
+
+        // Reobserve all sections with the new observer
+        sections.forEach(section => observer.observe(section));
+    }
+
     // Observe each section
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-</script>
+    sections.forEach(section => observer.observe(section));
+
+    // Add a listener to handle screen resize
+    window.addEventListener('resize', reinitializeObserver);
+</script> -->
 
 </body>
 </html>
