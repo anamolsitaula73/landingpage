@@ -58,10 +58,11 @@ include('go-to-top.php');
     <br><br><br>
 
         <?php include('features.php') ?>  
+    <br><br><br>
+
     </div>
     <div class="section" id="compare-table-section">
     
-    <br><br><br>
     <br><br>
 
         <?php include('compare_table.php') ?>  

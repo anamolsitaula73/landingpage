@@ -10,7 +10,7 @@
     .product-current {
       width: 80%;
       margin: auto;
-      padding-bottom:10 0px;
+      /* padding-bottom:10 0px; */
       padding-top:100px;
     }
     
