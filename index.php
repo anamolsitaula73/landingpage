@@ -5,86 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eAccounting</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-<style>
-   body {
-    width:100%;
-    /* background-color:#f4faff !important; */
+    <style>
+        /* General styles */
+        body {
+            font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
+        .body-css {
+            width: 100%;
+        }
 
-}
-.body-css{
-    width:100%;
-    overflow-x: hidden;
+        /* Section styles */
+        .section {
+            overflow-x:hidden;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease; /* Smooth fade transition */
+        }
 
-}
-body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+        /* When the section becomes visible */
+        .section.visible-fade {
+            opacity: 1; /* Fade in when section is in view */
+        }
 
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </style>
 </head>
-<script>
-
-
-</script>
 <body>
 
 <?php 
 session_start(); // Start session to store form data
-include('headerr.php')?>
+include('headerr.php');
+include('social/messenger.php');
+include('social/whatsapp.php');
+include('go-to-top.php');
+?>
 
 <div class="body-css">
 
-<?php include('certification.php') ?>  
-<br>
-<br>
-<br>
-<?php include('features.php') ?>  
+    <!-- Sections with animations -->
+    <div class="section" id="certification-section">
+        <?php include('certification.php') ?>  
+    </div>
 
-<?php include('compare_table.php') ?>  
+    <div class="section" id="features-section">
+        <?php include('features.php') ?>  
+    </div>
 
-<br>
-<?php include('feature_table.php') ?>  
-<hr style=" border-top: 3.5px solid #164193;">
-<?php include('solution.php') ?>  
+    <div class="section" id="compare-table-section">
+    <?php include('compare_table.php') ?>  
 
-<?php include('popup.php') ?>
-<?php include('go-to-top.php') ?>
+    </div>
 
-<?php include('social/whatsapp.php') ?>
-<?php include('social/messenger.php') ?>
+    <div class="section" id="feature-table-section">
+        <?php include('feature_table.php') ?>  
+    </div>
 
-<?php include('slider.php') ?>  
-<?php include('pricing.php') ?>  
-<?php include('testimonial.php') ?>  
+    <div class="section" id="solution-section">
+        <?php include('solution.php') ?>  
+    </div>
 
+    <div class="section">
+        <?php include('slider.php') ?>  
+    </div>
 
-<?php include('faq.php') ?>  
+    <div class="section">
+        <?php include('pricing.php') ?>  
+    </div>
 
+    <div class="section">
+        <?php include('testimonial.php') ?>  
+    </div>
 
-<?php include('buynow.php') ?>  
+    <div class="section">
+        <?php include('faq.php') ?>  
+    </div>
 
-
-
-
-<!-- <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25478735' frameborder='0' width='100%' height='1000'></iframe> -->
-
-
-
-
-
-
-
-
-
-<div class="footer-div">
-
-<?php include('footer/footer.php')?>
-</div>
-<!-- Footer Section -->
-
+        <div class="footer-div">
+            <?php include('footer/footer.php'); ?>
+        </div>
 </div>
 
+<script>
+    // Use Intersection Observer to handle fade-in and fade-out effects
+    const sections = document.querySelectorAll('.section');
+
+    const observerOptions = {
+        threshold: 0.2, // Trigger when 40% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Section is visible, apply fade-in effect
+                entry.target.classList.add('visible-fade');
+            } else {
+                // Section is not visible, remove fade effect
+                entry.target.classList.remove('visible-fade');
+            }
+        });
+    }, observerOptions);
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>

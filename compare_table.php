@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accounting Software Comparison</title>
     <style>
+      
         /* Responsive table wrapper */
         .table-responsive {
             background-color:;
@@ -20,7 +17,7 @@
         /* Table styling */
         .table-bordered {
             width: 100%;
-            min-width: 900px; /* Ensure a minimum width for larger tables */
+            min-width: 600px; /* Ensure a minimum width for larger tables */
             border-collapse: collapse;
           
         }

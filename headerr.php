@@ -69,6 +69,8 @@
 </head>
 <?php include('head_top.php');?>
     <center>
+    <div class="section">
+
 <div class="text-content" >
 <br>
 <br>
@@ -95,6 +97,7 @@
         allowfullscreen>
     </iframe>
 </div>
+    </div>
     </div>
     </div>
 </center>
