@@ -85,7 +85,7 @@
          
           <div class="col-md-3">
             <ul class="list-unstyled nav-links">
-              <li class="list_style">email : <a href="#">email@email.com</a></li>
+              <li class="list_style">email : <a href="mailto:example@example.com">email@email.com</a></li>
               <li class="list_style">phone : <a href="#">98123456678</a></li>
               <li class="list_style">address : <a href="#">98123456678</a></li>
 

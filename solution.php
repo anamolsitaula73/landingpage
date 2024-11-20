@@ -146,21 +146,21 @@
 
         <!-- Solution 4 -->
         <div class="solution-item">
-          <img src="assets/images/leave_sync.svg" alt="Leave Sync Icon">
+          <img src="assets/images/leave.png" alt="Leave Sync Icon">
           <h4>Leave & Payroll Sync</h4>
           <p>Automatically adjust payroll based on leave balances, ensuring smooth and accurate deductions without manual updates.</p>
         </div>
 
         <!-- Solution 5 -->
         <div class="solution-item">
-          <img src="assets/images/multi_branch.svg" alt="Multi-branch Icon">
+          <img src="assets/images/branch.png" alt="Multi-branch Icon">
           <h4>Track Multiple Branches & Godowns</h4>
           <p>Monitor and manage multiple branches or godowns from a single account, simplifying complex multi-location operations.</p>
         </div>
 
         <!-- Solution 6 -->
         <div class="solution-item">
-          <img src="assets/images/qr_sales.svg" alt="QR Sales Icon">
+          <img src="assets/images/qrcard.svg" alt="QR Sales Icon">
           <h4>QR Generation & Credit Card Support</h4>
           <p>Generate QR codes and support credit card payments at sales points, enhancing customer convenience and speeding up transactions.</p>
         </div>
