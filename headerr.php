@@ -80,7 +80,7 @@
 <div class="text-content" >
 
 <br>
-        <h1 class=" header-text" ><strong> Only for a limited time</strong></h1>
+        <h1 class=" header-text" ><strong>Limited Time Offer!</strong></h1>
         
      
     </div>
@@ -91,13 +91,15 @@
 <div class="video-container">
     <div class="video-responsive">
     <iframe
-        src="https://www.youtube.com/embed/x686oJ8gCes?autoplay=1"
+        src="https://www.youtube.com/embed/5OaKBdtD1Ow?autoplay=1"
         title="e-School | Quick Start Up | For Student"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
     </iframe>
+
+    <!-- <iframe width="914" height="514" src="https://www.youtube.com/embed/5OaKBdtD1Ow" title="Accounting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 </div>
     </div>
     </div>

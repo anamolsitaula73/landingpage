@@ -97,6 +97,28 @@
             font-size: 24px;
         }
     }
+    .buy-now-button {
+            background-color: #e20613;
+            color: #fff !important;
+            padding: 12px 24px;
+            font-size: 2vw; /* Responsive font size for button */
+            font-weight: bold;
+            margin-bottom:20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect */
+        .buy-now-button:hover {
+            background-color: black;
+            ;
+            /* color:black !important; */
+        }
+        .certification-line{
+            line-height: 1.8;
+        }
 </style>
 <script>
 
@@ -145,7 +167,7 @@ console.log("Intersecting:", entry.isIntersecting);
 </h1> -->
 
 <div class="Certifications">
-    <h1 class=" solution-header"> Our Software has been recognized by </h1>
+    <h1 class=" solution-header">Our Software Has Been Recognized By</h1>
         <!-- <h1  style="color:#164193;" ><b class="features-icon ">Our Software has been recognized by</b></h1><br> -->
         <ul id="Certifications">
             <li><img src="assets/images/iso.png" class="img-responsive" title="Iso Nepal"></li>
@@ -153,11 +175,11 @@ console.log("Intersecting:", entry.isIntersecting);
             <li><img src="assets/images/worldbank.png" class="img-responsive" title="World Bank"></li>
         </ul>
         <br>
-    <h3 class="" id="stats" style="color:#164193;">
+    <h3 class="certification-line" id="stats" style="color:#164193;">
 <span>Celebrating </span><span id="yearCount" style="color:#e20613;"><strong> 0</strong></span> Years of Excellence,
 <span>Empowering</span> <span id="schoolCount" style="color:#e20613;"><strong>0</strong>+ </span>Organizations, 
 <span>and Trusted by</span> <span id="userCount" style="color:#e20613;"><strong>0</strong>k+ </span> Users!
 </h3>
 
 </div>
-
+<br>

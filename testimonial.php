@@ -154,7 +154,7 @@
     </style>
 </head>
 <body>
-    <h1 class="testimonial-header">Hear what people have to say</h1>
+    <h1 class="testimonial-header">Hear What People Have to Say</h1>
     <br>
     <section class="ezone-testimonial-wrapper">
         <div class="ezone-testimonial-card">

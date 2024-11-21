@@ -85,7 +85,7 @@
 <body>
     <div class="main-countdown">
         <div class="overlay-countdown">
-            <div class="title" style="color:white;">Hurry Up !<br> Grab your Software Now.</div>
+            <div class="title" style="color:white;"><strong>Hurry Up !<br> Grab your Software Now.</strong></div>
             <div class="col">
                 <div  > 
                     <input type="text" readonly value="0">

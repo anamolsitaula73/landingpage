@@ -156,69 +156,76 @@
 </div>
    <section class="faq-container">
        <div class="faq-one">
-           <h2 class="faq-page">What is accounting software ?</h2>
+           <h2 class="faq-page">Where are we based ?</h2>
            <div class="faq-body">
-               <p>Online accounting software is sometimes called 'cloud-based software'. It allows users to create, store and send invoices from any device. You don't need anything saved on your computer, and there are no disks to load. Simply log in on a web browser and jump right into your ezoneBooks online account. Your personal data and settings are right there, stored safely in 'the cloud'.</p>
+               <p>We are a US based Company that has been serving in the South Asian market for 20 years to thousands of companies from IB world schools , Universities to Major corporations and Airline companies. </p>
            </div>
        </div>
        <hr class="hr-line">
 
        <div class="faq-two">
-           <h2 class="faq-page">Why should i move my business to the cloud ?</h2>
+           <h2 class="faq-page">Is my data safe overseas?</h2>
            <div class="faq-body">
-           <ul>
-                    <li>e-Accounting is an easy-to-use accounting software that can help you automate tasks such as bookkeeping, invoicing, expense tracking, inventory management and more.</li>
-                    <li>We offer different plans and features designed for businesses of all sizes and industries. </li>
-                    <li>We take pride in providing exceptional customer service support. We offer free set up sessions with our ezoneBooks experts to help you get started with your account. </li>
-                    <li>You will also have access to a range of on demand webinars and video tutorials.</li>
-                    <li>ezoneBooks is tough to beat on customer service and great value.</li>
-                 
-                </ul>
+           <p>Our Data is hosted by DATA HUB, an international standards of Data security and Data Centers with Carrier-neutral that is suitable for BFIs, Enterprises, ICT Companies, and other Corporate houses data housing needs.</p>
            </div>
        </div>
        <hr class="hr-line">
 
        <div class="faq-three">
-           <h2 class="faq-page">Can I access  Online accounting software on my mobile phone or tablet?</h2>
+           <h2 class="faq-page">How is data security maintained when you transfer data?</h2>
            <div class="faq-body">
-               <p>e-Accounting software can be accessed online from any web enabled mobile device with a web browser.</p>
+               <p>e-Accounting protects your personal information. For security of transactions, we use the Secure Sockets Layer (SSL) protocol, which encrypts any information such as credit card number and billing information that you send us electronically. The encryption process protects your information by scrambling it before it is sent to us from your computer. In addition, your data is backed up automatically and is accessible from any device, so you can always stay connected and up-to-date. We are committed to maintaining the highest levels of security for our customers, their data, and their processes. Our team protects data, mitigates risks, and helps customers achieve regulatory compliance by aligning people, processes, and technology. Our multiple redundant servers provide complete reliability, and data is saved in multiple places.
+               </p>
            </div>
        </div>
        <hr class="hr-line">
 
        <div class="faq-four">
-           <h2 class="faq-page">Is my data secure?</h2>
+           <h2 class="faq-page">Can I afford it ?</h2>
            <div class="faq-body">
-               <p>When you use e-Accounting, your data is stored on our servers in the cloud. We know that data is one of your company's most valuable assets, so we go to great lengths to protect it.
-                    We rely on advanced, industry-recognised security safeguards to keep all of your financial data private and protected. e-Accounting is a ISO certified product since 2015 . ISO is one of the most rigorous quality testing certificates in the world. 
-                </p>
+               <p>It is free for our initial customer base even after it will be very affordable in comparison the other softwares in the market </p>
            </div>
        </div>
        <hr class="hr-line">
 
        <div class="faq-five">
-           <h2 class="faq-page">Is it possible for me to get software updates/upgrades, and if so, how do I get them?</h2>
+           <h2 class="faq-page">How does the software handle differences in currency, tax rules, and other Australian-specific requirements?</h2>
            <div class="faq-body">
-               <p>Yes, One of the numerous advantages of cloud-based software is that it is always up to date.
-                   Updates are carried out automatically and have no impact on your data.</p>
+               <p>We have consulted a group of Australian Accountants and confirmed our Software meets Australian Regulations.</p>
            </div>
        </div>
        <hr class="hr-line">
 
        <div class="faq-six">
-           <h2 class="faq-page">Do I need to Download e-Accounting Software?</h2>
+           <h2 class="faq-page">How long will we be around?</h2>
            <div class="faq-body">
-               <p>There is no need to download e-Accounting  because it is connected to the cloud, which means you can access it from any device with an internet connection.</p>
+               <p>We've been in business for over 20 years, trusted by global leaders like Microsoft and the World Bank. Our long-standing commitment to innovation and client satisfaction ensures we’re here for the long haul. Over 80% of our original customers still rely on us today. Plus, we offer full data export options to keep you in control. Let us prove it—try it for free and see the difference for yourself.</p>
            </div>
        </div>
 
        <hr class="hr-line">
 
 <div class="faq-seven">
-    <h2 class="faq-page">Can my accountant access my account?</h2>
+    <h2 class="faq-page">Can I easily export my data if I need to switch to another platform?</h2>
     <div class="faq-body">
-        <p>Absolutely. Since your accounting system is connected to the cloud, they can use their own login to access reports like the general ledger, balance sheet, or cash flow statement whenever they need.</p>
+        <p>The ease of  importing and exporting raw data is what makes e-Accounting so easy to use , you can export your data whenever you need.</p>
     </div>
+</div>
+<hr class="hr-line">
+
+<div class="faq-eight">
+    <h2 class="faq-page">How often can I reach out to support?</h2>
+    <div class="faq-body">
+    <p>Our support staff are live 24x7 , and well versed in software complexities and client needs with +2 years of experience.  </p>
+</div>
+</div>
+<hr class="hr-line">
+
+<div class="faq-nine">
+    <h2 class="faq-page">How will my data be handled in the implementation process ?</h2>
+    <div class="faq-body">
+    <p> We will set up a meeting time that you pick and walk you through the step by step implementation process and guide you through the use cases of the software. You will have tutorial videos to guide you in each module , the representative will be present for you for a minimum of 2 week period or till your implementation is completed .</p>
+</div>
 </div>
 <hr class="hr-line">
 

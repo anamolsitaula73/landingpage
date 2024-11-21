@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Carousel Slider</title>
     <style>
         /* Slideshow container */
         .slideshow-container {
@@ -148,6 +147,7 @@
 .client-slide img {
     width: 150px;
     height: 100px;
+    color:red;
     object-fit: contain;
     display: block;
 }

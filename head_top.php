@@ -231,8 +231,8 @@ $show_button = isset($_SESSION['survey_completed']);
 
 
 
-    <div class="free_btn" id="get-it-free">
-    <a href="#pricing" >Get Now</a>
+    <div class="free_btn" >
+    <a href="https://accounting.ezonecloud.com/CompanyCreate.aspx" target="_blank">Get Now</a>
 
     </div>
 

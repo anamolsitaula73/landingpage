@@ -21,7 +21,7 @@
             width: 100%;
             
         }
-
+      
         /* Section styles */
         .section {
             overflow-x: hidden;
@@ -54,6 +54,9 @@ include('go-to-top.php');
         <?php include('certification.php') ?>  
         <br><br>
     </div>
+    <div style="margin:auto; text-align:center;">
+<a href="https://accounting.ezonecloud.com/CompanyCreate.aspx" target="_blank" class="buy-now-button">Get Now</a>
+</div>
     <div class="section" id="features-section">
     <br><br><br>
 
