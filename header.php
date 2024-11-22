@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Video Player</title>
+  <!-- Link to Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -118,7 +120,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(0);
-      font-size: 50px;
+      font-size: 60px;
       color: white;
       opacity: 0.8;
       z-index: 10;
@@ -126,33 +128,34 @@
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    .show-play-icon {
+    .show-play-icon,
+    .show-pause-icon {
       transform: translate(-50%, -50%) scale(1.2);
       opacity: 1;
     }
 
-    .show-pause-icon {
-      transform: translate(-50%, -50%) scale(1.2);
-      opacity: 1;
+    .hidden {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
     }
   </style>
 </head>
 <body>
   <div class="video-player">
     <video id="video" src="assets/video/eaccounting.mp4" muted autoplay></video>
-    <div class="play-icon" id="play-icon">▶</div>
-    <div class="pause-icon" id="pause-icon">⏸</div>
+    <div class="play-icon hidden" id="play-icon"><i class="fas fa-play-circle"></i></div>
+    <div class="pause-icon hidden" id="pause-icon"><i class="fas fa-pause-circle"></i></div>
     <div class="controls">
-      <button id="play-pause">▶</button>
+      <button id="play-pause"><i class="fas fa-pause"></i></button>
       <div class="progress-bar" id="progress-bar">
         <span></span>
       </div>
-      <div class="time" id="time">0:00 / 0:00</div>
+      <div class="time" id="time">0:00 / 0:00 </div>&nbsp;
       <div class="volume-controls">
-        <button id="volume-toggle">🔇</button>
+        <button id="volume-toggle"><i class="fas fa-volume-mute"></i></button>
         <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
       </div>
-      <button class="fullscreen" id="fullscreen">⛶</button>
+      <button class="fullscreen" id="fullscreen"><i class="fas fa-expand"></i></button>
     </div>
   </div>
 
@@ -170,55 +173,38 @@
 
     // Show initial pause icon
     window.addEventListener("load", () => {
-      pauseIcon.textContent = "⏸";
-      pauseIcon.classList.add("show-pause-icon");
-      setTimeout(() => {
-        pauseIcon.classList.remove("show-pause-icon");
-      }, 600);
+      showIcon(pauseIcon);
     });
 
     // Play/Pause functionality
     playPauseBtn.addEventListener("click", togglePlayPause);
-
-    video.addEventListener("click", () => {
-      togglePlayPause();
-
-      // Show pause icon
-      if (video.paused) {
-        pauseIcon.textContent = "⏸";
-        pauseIcon.classList.add("show-pause-icon");
-        playIcon.classList.remove("show-play-icon");
-        setTimeout(() => {
-          pauseIcon.classList.remove("show-pause-icon");
-        }, 600);
-      }
-    });
-
-    // Double-click for seeking
-    video.addEventListener("dblclick", (e) => {
-      const rect = video.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-
-      if (clickX > rect.width / 2) {
-        video.currentTime += 10; // Seek forward
-      } else {
-        video.currentTime -= 10; // Seek backward
-      }
-    });
+    video.addEventListener("click", togglePlayPause);
 
     // Toggle play/pause function
     function togglePlayPause() {
       if (video.paused) {
         video.play();
-        playPauseBtn.textContent = "⏸";
-        playIcon.classList.remove("show-play-icon");
-        pauseIcon.classList.add("show-pause-icon");
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        showIcon(pauseIcon);
       } else {
         video.pause();
-        playPauseBtn.textContent = "▶";
-        pauseIcon.classList.remove("show-pause-icon");
-        playIcon.classList.add("show-play-icon");
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        showIcon(playIcon);
       }
+    }
+
+    // Show and hide play/pause icon
+    function showIcon(icon) {
+      playIcon.classList.add("hidden");
+      pauseIcon.classList.add("hidden");
+
+      icon.classList.remove("hidden");
+      icon.classList.add(icon === playIcon ? "show-play-icon" : "show-pause-icon");
+
+      setTimeout(() => {
+        icon.classList.remove("show-play-icon", "show-pause-icon");
+        icon.classList.add("hidden");
+      }, 600);
     }
 
     // Update progress bar and time
@@ -243,21 +229,20 @@
       const rect = progressBar.getBoundingClientRect();
       const clickX = e.clientX - rect.left;
       const width = rect.width;
-      const newTime = (clickX / width) * video.duration;
-      video.currentTime = newTime;
+      video.currentTime = (clickX / width) * video.duration;
     });
 
     // Volume toggle (mute/unmute)
     volumeToggle.addEventListener("click", () => {
       video.muted = !video.muted;
-      volumeToggle.textContent = video.muted ? "🔇" : "🔊";
+      volumeToggle.innerHTML = video.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
     });
 
     // Volume slider
     volumeSlider.addEventListener("input", (e) => {
       video.volume = e.target.value;
       video.muted = video.volume === 0;
-      volumeToggle.textContent = video.muted ? "🔇" : "🔊";
+      volumeToggle.innerHTML = video.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
     });
 
     // Fullscreen toggle
