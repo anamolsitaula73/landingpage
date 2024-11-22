@@ -41,7 +41,9 @@
 
 <?php 
 session_start(); // Start session to store form data
-include('headerr.php');
+include('head_top.php');
+
+include('header.php');
 include('social/messenger.php');
 include('social/whatsapp.php');
 include('go-to-top.php');

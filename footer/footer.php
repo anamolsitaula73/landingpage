@@ -54,10 +54,10 @@
 .list_style{
   font-size:14px;
 }
-.icon-facebook, .icon-pinterest, .icon-youtube {
+.icon-facebook, .icon-linkedin, .icon-youtube {
     font-size: 24px; /* Adjust the size as needed */
-  color:white;
 }
+
 </style>
   </head>
   <body>
@@ -85,9 +85,9 @@
          
           <div class="col-md-3">
             <ul class="list-unstyled nav-links">
-              <li class="list_style">email : <a href="mailto:example@example.com">email@email.com</a></li>
+              <li class="list_style">email : <a href="mailto:supportintl@ezone.com.np">supportintl@ezone.com.np</a></li>
               <li class="list_style">phone : <a href="#">98123456678</a></li>
-              <li class="list_style">address : <a href="#">98123456678</a></li>
+              <li class="list_style">address : <a>Usa newjjedj</a> ejj<br>isi</li>
 
          
             </ul>
@@ -96,7 +96,7 @@
           <div class="col-md text-md-center">
             <ul class="social list-unstyled">
               <li><a href="#"><span class="icon-facebook"></span></a></li>
-              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
               <li><a href="#"><span class="icon-youtube"></span></a></li>
             </ul>
             <a href="https://accounting.ezonecloud.com/CompanyCreate.aspx" target="_blank">

@@ -122,6 +122,7 @@
             font-size: 28px;
             font-weight: bold;
             margin: 15px 0;
+            color:#e20613;
         }
 
         .pricing-currency {
@@ -129,12 +130,13 @@
         }
         .pricing-currency-offer{
             font-size: 30px;
-            color:#e20613;
+            color:#8abc00;
 
         }
 
         .pricing-frequency-offer{
-            color:#e20613;
+            color:#8abc00;
+            
 
         }
         .pricing-btn {
@@ -178,7 +180,7 @@
         }
         .pricing-price-number-offer{
             font-size:30px;
-            color:#e20613;
+            color:#8abc00;
 
         }
         @media (min-width: 1400px) {
@@ -205,6 +207,7 @@
 
     .pricing-plan-name {
         font-size: 22px; /* Increase the font size for plan names */
+        font-weight:bold;
     }
 
     .pricing-description {
