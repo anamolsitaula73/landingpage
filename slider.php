@@ -12,23 +12,23 @@
             overflow: hidden; /* Hide overflow */
         }
 
-        .slider-wrapper{
-  width:85%;
-}
+                .slider-wrapper{
+          width:85%;
+        }
         /* Carousel track */
         .carousel-track {
             display: flex; /* Use Flexbox to display slides in a row */
             transition: transform 0.5s ease-in-out; /* Smooth transition */
         }
 
-        /* Slide styling */
-        .slide {
-    flex: 0 0 33.333%; /* Show 3 slides at a time by default */
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    height: 100%; /* Fixed height for each slide */
-}
+              /* Slide styling */
+              .slide {
+          flex: 0 0 33.333%; /* Show 3 slides at a time by default */
+          padding: 10px;
+          box-sizing: border-box;
+          text-align: center;
+          height: 100%; /* Fixed height for each slide */
+      }
 
 
         /* Navigation buttons */
@@ -126,78 +126,79 @@
                          }
         }
 
-/* Each slide */
-.client-slide {
-    display: flex;
-    flex-direction: column; /* Arrange content in a column */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    border: 2px solid #d90429;
-    border-radius: 5px;
-    padding: 0 20px;
-    margin:auto;
+          /* Each slide */
+          .client-slide {
+              display: flex;
+              flex-direction: column; /* Arrange content in a column */
+              justify-content: center; /* Center content vertically */
+              align-items: center; /* Center content horizontally */
+              border: 2px solid #d90429;
+              border-radius: 5px;
+              padding: 0 20px;
+              margin:auto;
 
-    transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
-    height: 370px;/* Ensure full height */
-}
-
-
-
-/* Ensuring all logos are the same size */
-.client-slide img {
-    width: 150px;
-    height: 100px;
-    color:red;
-    object-fit: contain;
-    display: block;
-}
+              transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+              height: 370px;/* Ensure full height */
+          }
 
 
-/* Responsive Settings */
-@media (min-width: 792px) {
-    .client-slide {
-        min-width: 200px;
-        
-    }
-}
 
-@media (min-width: 1024px) {
-    .client-slide {
-        min-width: 250px;
-    }
-}
+        /* Ensuring all logos are the same size */
+        .client-slide img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+            display: block;
+            
+        }
 
-.container-module {
-      width: 100%;
-      background-color: #F6FFFA;
-    }
 
-    .module-container {
-    min-width: 250px; /* Further adjust for larger screens */
+        /* Responsive Settings */
+        @media (min-width: 792px) {
+            .client-slide {
+                min-width: 200px;
+                
+            }
+        }
 
-      text-align: center;
-      margin-bottom: 30px;
-      color: white;
+        @media (min-width: 1024px) {
+            .client-slide {
+                min-width: 250px;
+            }
+        }
 
-    }
+        .container-module {
+              width: 100%;
+              background-color: #F6FFFA;
+            }
 
-    .module-container img {
-    width: 150px;
-    height: 150px;
-    filter: brightness(0) saturate(1000%) hue-rotate(210deg); /* Apply a filter to make icons blue */
-    margin-bottom: 15px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
-}
+            .module-container {
+            min-width: 250px; /* Further adjust for larger screens */
 
-.module-container img:hover {
-    filter: brightness(0) saturate(1000%) hue-rotate(180deg); /* Adjust hue on hover for effect */
-}
+              text-align: center;
+              margin-bottom: 30px;
+              color: white;
 
-    .module-container p {
-      font-size: 14px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+
+            }
+
+            .module-container img {
+            width: 150px;
+            height: 150px;
+            filter: brightness(0) saturate(1000%) hue-rotate(210deg); /* Apply a filter to make icons blue */
+            margin-bottom: 15px;
+            transition: filter 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .module-container img:hover {
+            filter: brightness(0) saturate(1000%) hue-rotate(180deg); /* Adjust hue on hover for effect */
+        }
+
+        .module-container p {
+          font-size: 16px !important;
+          font-weight: bold;
+          margin:auto;
+        }
 
     .module-grid {
       display: grid;
@@ -207,15 +208,19 @@
       padding: 20px;
       border: 1px solid white;
       width: 100%;
+    background-color:red;
+
     }
 
     .module-item {
       cursor: pointer;
       background-color: white;
 
+
     }
     
     .module-item h1{
+      font-size: 22px !important;
      
       color:#0c2450;
 
@@ -227,10 +232,10 @@
       font-size: 12px;
       color: #333;
       text-align: left;
-          background-color: #f0f8ff;
+          background-color: ;
       
       padding: 10px;
-      border: 1px solid #ddd;
+      /* border: 1px solid #ddd; */
     }
 
     /* For smaller screens */
@@ -243,6 +248,11 @@
         width: 75px;
         height: 75px;
       }
+      .module-item h1{
+      font-size: 18px !important;
+     
+
+    }
 
       .module-container p {
         font-size: 12px;

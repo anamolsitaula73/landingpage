@@ -294,6 +294,14 @@
     playPauseBtn.addEventListener("click", togglePlayPause);
     video.addEventListener("click", togglePlayPause);
 
+        // Add event listener for spacebar
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Space" && document.activeElement !== volumeSlider) {
+        e.preventDefault();
+        togglePlayPause();
+      }
+    });
+
     function togglePlayPause() {
       if (video.paused) {
         video.play();

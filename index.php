@@ -102,6 +102,10 @@ include('go-to-top.php');
     </div>
 
     <div class="section">
+        <?php include('approved.php') ?>  
+    </div>
+
+    <div class="section">
         <?php include('testimonial.php') ?>  
     </div>
 

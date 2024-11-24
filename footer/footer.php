@@ -85,9 +85,9 @@
          
           <div class="col-md-3">
             <ul class="list-unstyled nav-links">
-              <li class="list_style">email : <a href="mailto:supportintl@ezone.com.np">supportintl@ezone.com.np</a></li>
-              <li class="list_style">phone : <a href="#">98123456678</a></li>
-              <li class="list_style">address : <a>Usa newjjedj</a> ejj<br>isi</li>
+              <li class="list_style">Email : <a href="mailto:supportintl@ezone.com.np">supportintl@ezone.com.np</a></li>
+              <li class="list_style">Phone : +977-9802026676/9811240470</li>
+              <li class="list_style">Address : Mahalaxmisthan, Lalitpur, Nepal</li>
 
          
             </ul>
@@ -95,9 +95,9 @@
         
           <div class="col-md text-md-center">
             <ul class="social list-unstyled">
-              <li><a href="#"><span class="icon-facebook"></span></a></li>
-              <li><a href="#"><span class="icon-linkedin"></span></a></li>
-              <li><a href="#"><span class="icon-youtube"></span></a></li>
+              <li><a href="https://www.facebook.com/ezone.intpl" target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/damodar-adhikari-784165130/" target="_blank"><span class="icon-linkedin"></span></a></li>
+              <li><a href="https://www.youtube.com/@ezoneintl" target="_blank"><span class="icon-youtube"></span></a></li>
             </ul>
             <a href="https://accounting.ezonecloud.com/CompanyCreate.aspx" target="_blank">
                         <button class="footer_getfree btn ">Get Now</button>

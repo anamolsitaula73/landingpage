@@ -130,12 +130,12 @@
         }
         .pricing-currency-offer{
             font-size: 30px;
-            color:#8abc00;
+            color:#6a994e;
 
         }
 
         .pricing-frequency-offer{
-            color:#8abc00;
+            color:#6a994e;
             
 
         }
@@ -180,7 +180,7 @@
         }
         .pricing-price-number-offer{
             font-size:30px;
-            color:#8abc00;
+            color:#6a994e;
 
         }
         @media (min-width: 1400px) {
