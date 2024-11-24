@@ -194,11 +194,11 @@ h2 {
   <div class="approval-container">
     <div class="approval-content">
       <div class="approval-image">
-        <img src="assets/images/anamol.jpg" alt="Australian Accountant" class="accountant-img" />
+        <img src="assets/images/krishna.png" alt="Australian Accountant" class="accountant-img" />
       </div>
       <div class="approval-details">
         <h2>Approved by an Australian Accountant</h2>
-        <p class="accountant-name">John Doe</p>
+        <p class="accountant-name">Krishna K. and Team</p>
         <p class="accountant-title">Certified Australian Accountant</p>
         <p class="approval-description">
           "This software offers unmatched precision and efficiency. After thoroughly testing its capabilities, I proudly endorse it as a reliable solution for accounting professionals."
