@@ -285,8 +285,8 @@
     const unmuteOverlay = document.getElementById("unmute-overlay");
 
     window.addEventListener("load", () => {
-       video.volume = 1;
-  volumeSlider.value = 1;
+      video.volume = 1;
+      volumeSlider.value = 1;
       volumeSlider.style.background = `linear-gradient(to right, #e20613 ${video.volume * 100}%, #444 ${video.volume * 100}%)`;
       showIcon(pauseIcon);
     });
@@ -317,10 +317,20 @@
       }, 600);
     }
 
+    video.addEventListener("progress", () => {
+  if (video.buffered.length > 0) {
+    const bufferedEnd = video.buffered.end(video.buffered.length - 1);
+    const bufferedPercent = (bufferedEnd / video.duration) * 100;
+    
+    progressSlider.style.background = `linear-gradient(to right, #e20613 ${progressSlider.value}%, #fff ${bufferedPercent}%, #444 ${bufferedPercent}%)`;
+  }
+});
+
     video.addEventListener("timeupdate", () => {
       const percent = (video.currentTime / video.duration) * 100;
       progressSlider.value = percent;
 
+      
       const currentMinutes = Math.floor(video.currentTime / 60);
       const currentSeconds = Math.floor(video.currentTime % 60);
       const durationMinutes = Math.floor(video.duration / 60);
