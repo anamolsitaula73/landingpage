@@ -185,7 +185,6 @@
             .module-container img {
             width: 150px;
             height: 150px;
-            filter: brightness(0) saturate(1000%) hue-rotate(210deg); /* Apply a filter to make icons blue */
             margin-bottom: 15px;
             transition: filter 0.3s ease; /* Smooth transition on hover */
         }
@@ -208,7 +207,7 @@
       padding: 20px;
       border: 1px solid white;
       width: 100%;
-    background-color:red;
+    /* background-color:red; */
 
     }
 
@@ -232,7 +231,6 @@
       font-size: 12px;
       color: #333;
       text-align: left;
-          background-color: ;
       
       padding: 10px;
       /* border: 1px solid #ddd; */
@@ -343,7 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="module-item module-container" onclick="toggleContent('content2')">
     <center>
 
-        <img src="assets/images/sales.svg" alt="Sales Icon">
+        <img src="assets/images/sales.png" alt="Sales Icon">
   </center>
 
   <hr style=" border-top: 2px solid white;">
@@ -360,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="module-item module-container" onclick="toggleContent('content3')">
   <center>
 
-        <img src="assets/images/purchasing.svg" alt="Purchasing Icon">
+        <img src="assets/images/purchasing.png" alt="Purchasing Icon">
   </center>
 
   <hr style=" border-top: 2px solid white;">
@@ -379,7 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="module-item module-container" onclick="toggleContent('content4')">
   <center>
 
-        <img src="assets/images/inventory.svg" alt="Inventory Icon">
+        <img src="assets/images/inventory.jpg" alt="Inventory Icon">
   </center>
 
   <hr style=" border-top: 2px solid white;">
@@ -398,7 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="module-item module-container" onclick="toggleContent('content5')">
   <center>
 
-        <img src="assets/images/accounting.svg" alt="Accounting Icon">
+        <img src="assets/images/accounting.jpg" alt="Accounting Icon">
   </center>
 
         <hr style=" border-top: 2px solid white;">
@@ -415,7 +413,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="client-slide">
     <div class="module-item module-container" onclick="toggleContent('content6')">
     <center>
-        <img src="assets/images/crm.svg" alt="CRM Icon">
+        <img src="assets/images/crm.png" alt="CRM Icon">
   </center>
   <hr style=" border-top: 2px solid white;">
 
@@ -431,7 +429,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="slide mySlides">
                     <div class="client-slide">
      <div class="module-item module-container" onclick="toggleContent('content7')">
-     <center>    <img src="assets/images/payroll.svg" alt="Payroll Icon"></center>
+     <center>    <img src="assets/images/payroll.png" alt="Payroll Icon"></center>
   <hr style=" border-top: 2px solid white;">
 
         <h1><strong>Payroll</strong></h1>
@@ -446,7 +444,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="client-slide">
      <div class="module-item module-container" onclick="toggleContent('content8')">
      <center>
-        <img src="assets/images/organizationstructure.svg" alt="Org Structure Icon"></center>
+        <img src="assets/images/organizationstructure.jpg" alt="Org Structure Icon"></center>
   <hr style=" border-top: 2px solid white;">
         
         <h1><strong>Org Structure</strong></h1>
@@ -461,7 +459,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="slide mySlides">
                         <div class="client-slide">
     <div class="module-item module-container" onclick="toggleContent('content9')">
-    <center><img src="assets/images/businesspartner.svg" alt="Business Partners Icon"></center>
+    <center><img src="assets/images/partner.png" alt="Business Partners Icon"></center>
   <hr style=" border-top: 2px solid white;">
 
         <h1><strong>Business Partners</strong></h1>
@@ -478,7 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       
       <div class="module-item module-container" onclick="toggleContent('content10')">
-      <center> <img src="assets/images/hrm.svg" alt="Human Resource Icon"></center>
+      <center> <img src="assets/images/hr.png" alt="Human Resource Icon"></center>
     <hr style=" border-top: 2px solid white;">
           
           <h1><strong>Human Resource</strong></h1>
@@ -493,7 +491,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="slide mySlides">
                     <div class="client-slide">
     <div class="module-item module-container" onclick="toggleContent('content11')">
-    <center> <img src="assets/images/budget.svg" alt="Budget Icon"></center>
+    <center> <img src="assets/images/budget.png" alt="Budget Icon"></center>
   <hr style=" border-top: 2px solid white;">
 
         <h1><strong>Budget</strong></h1>
@@ -510,7 +508,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="client-slide">
     <div class="module-item module-container" onclick="toggleContent('content12')">
       
-    <center> <img src="assets/images/sms.svg" alt="SMS Icon"> </center>
+    <center> <img src="assets/images/sms.png" alt="SMS Icon"> </center>
     <h1><strong>SMS</strong></h1>
         <div id="content12" class="module-content">
           <p>SMS module sends notifications and alerts to customers or employees via SMS.</p>
@@ -525,7 +523,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="client-slide">
     <div class="module-item module-container" onclick="toggleContent('content13')">
     <center>
-        <img src="assets/images/attendance.svg" alt="Attendance Icon"> </center>
+        <img src="assets/images/attendance.jpg" alt="Attendance Icon"> </center>
         <h1><strong>Attendance</strong></h1>
         <div id="content13" class="module-content">
           <p>Attendance module tracks employee check-ins and check-outs for payroll processing.</p>
@@ -537,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="slide mySlides">
                         <div class="client-slide">
     <div class="module-item module-container" onclick="toggleContent('content14')">
-    <center>  <img src="assets/images/report.svg" alt="Reports Icon"> </center>
+    <center>  <img src="assets/images/report.png" alt="Reports Icon"> </center>
   <hr style=" border-top: 2px solid white;">
         
         <h1><strong>Reports</strong></h1>
