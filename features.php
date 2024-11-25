@@ -206,27 +206,27 @@
         <div class="product-content-item product-active" id="get-paid">
           <h3>Get Paid Faster</h3>
           <p>Automate invoicing and send reminders. Track your payments in real-time and reduce payment delays significantly.</p>
-          <img class="product-features-image" src="assets/images/get.png" alt="Get Paid Faster">
+          <img class="product-features-image" src="assets/images/getpaidfaster.png" alt="Get Paid Faster">
         </div>
         <div class="product-content-item" id="track-inventory">
           <h3>Track Inventory in Real-Time</h3>
           <p>Monitor your inventory levels instantly, get alerts for low stock, and make informed purchasing decisions.</p>
-          <img class="product-features-image" src="assets/images/eaccounting.png" alt="Track Inventory">
+          <img class="product-features-image" src="assets/images/inventory.png" alt="Track Inventory">
         </div>
         <div class="product-content-item" id="organize-expenses">
           <h3>Organize Expenses Effortlessly</h3>
           <p>Record and categorize your business expenses with ease, and get comprehensive financial reports at your fingertips.</p>
-          <img class="product-features-image" src="assets/images/eaccounting.png" alt="Organize Expenses">
+          <img class="product-features-image" src="assets/images/expenses.png" alt="Organize Expenses">
         </div>
         <div class="product-content-item" id="payroll-hr">
           <h3>Payroll, HR, Time & Attendance</h3>
           <p>Extend the power of people managing core HR, payroll & attendance with integrated financials.</p>
-          <img class="product-features-image" src="assets/images/eaccounting.png" alt="Payroll and HR">
+          <img class="product-features-image" src="assets/images/payrollhr.png" alt="Payroll and HR">
         </div>
         <div class="product-content-item" id="advance-functionality">
           <h3>Advanced Functionality</h3>
           <p>Automates business workflows and helps you work collectively across departments and multiple locations.</p>
-          <img class="product-features-image" src="assets/images/eaccounting.png" alt="Advanced Functionality">
+          <img class="product-features-image" src="assets/images/advanced.png" alt="Advanced Functionality">
         </div>
       </div>
     </div>

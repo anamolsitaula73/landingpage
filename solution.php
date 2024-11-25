@@ -139,7 +139,7 @@
 
         <!-- Solution 3 -->
         <div class="solution-item">
-          <img src="assets/images/crm.svg" alt="CRM Icon">
+          <img src="assets/images/crm.png" alt="CRM Icon">
           <h4>CRM for Employee and Client Management</h4>
           <p>Track all employee tasks and manage client and potential client data in one place with our integrated CRM, ensuring you’re always up-to-date.</p>
         </div>

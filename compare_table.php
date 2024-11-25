@@ -112,9 +112,9 @@
             </tr>
             <tr>
                 <th>&nbsp;</th>
+                <th style="text-align:center; color:#e20613;"><strong>e-Accounting</strong></th>
                 <th style="text-align:center"><strong>Tally</strong></th>
                 <th style="text-align:center"><strong>Swastik</strong></th>
-                <th style="text-align:center; color:#e20613;"><strong>e-Accounting</strong></th>
                 <th style="text-align:center"><strong>Quickbooks</strong></th>
                 <th style="text-align:center"><strong>Xero</strong></th>
                 <th style="text-align:center"><strong>Zoho Financials</strong></th>
@@ -125,9 +125,9 @@
             </tr>
             <tr>
                 <th><strong>Rank</strong></th>
+                <td style="text-align:center;color:#e20613;">1/Nepal</td>
                 <td style="text-align:center ">1/India</td>
                 <td style="text-align:center">2/Nepal</td>
-                <td style="text-align:center;color:#e20613;">1/Nepal</td>
                 <td style="text-align:center">1</td>
                 <td style="text-align:center">3</td>
                 <td style="text-align:center">2</td>
@@ -138,9 +138,9 @@
             </tr>
             <tr>
                 <th><strong>Ratings</strong></th>
-                <td style="text-align:center">&nbsp;</td>
-                <td style="text-align:center">&nbsp;</td>
                 <td style="text-align:center;color:#e20613;">4.5/5</td>
+                <td style="text-align:center">&nbsp;</td>
+                <td style="text-align:center">&nbsp;</td>
                 <td style="text-align:center">4.5/5</td>
                 <td style="text-align:center">4.5/5</td>
                 <td style="text-align:center">4.5/5</td>
@@ -151,9 +151,9 @@
             </tr>
             <tr>
                 <th><strong>Market Focus</strong></th>
+                <td style="text-align:center;color:#e20613;">World</td>
                 <td style="text-align:center">India</td>
                 <td style="text-align:center">Nepal</td>
-                <td style="text-align:center;color:#e20613;">World</td>
                 <td style="text-align:center">World</td>
                 <td style="text-align:center">Australia</td>
                 <td style="text-align:center">World</td>
@@ -164,9 +164,9 @@
             </tr>
             <tr>
                 <th><strong>Price/Month(USD)</strong></th>
+                <td style="text-align:center;color:#e20613;">$20.99</td>
                 <td style="text-align:center">$30</td>
                 <td style="text-align:center">$25</td>
-                <td style="text-align:center;color:#e20613;">$20.99</td>
                 <td style="text-align:center">$25</td>
                 <td style="text-align:center">$35</td>
                 <td style="text-align:center">$20</td>

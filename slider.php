@@ -189,9 +189,7 @@
             transition: filter 0.3s ease; /* Smooth transition on hover */
         }
 
-        .module-container img:hover {
-            filter: brightness(0) saturate(1000%) hue-rotate(180deg); /* Adjust hue on hover for effect */
-        }
+        
 
         .module-container p {
           font-size: 16px !important;
@@ -227,7 +225,8 @@
 
     /* Content section hidden by default */
     .module-content {
-      margin-top: 10px;
+      /* margin-top: 10px; */
+      margin:auto;
       font-size: 12px;
       color: #333;
       text-align: left;
